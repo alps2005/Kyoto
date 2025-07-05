@@ -37,14 +37,14 @@ document.getElementById('search-button').addEventListener('click', function() {
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">ID: ${id}</li>
                         <li class="list-group-item">Especie: ${species}</li>
-                        <li class="list-group-item">Altura: ${height} m</li>
-                        <li class="list-group-item">Peso: ${weight} kg</li>
+                        <li class="list-group-item">Altura: ${height}m</li>
+                        <li class="list-group-item">Peso: ${weight}kg</li>
                         <li class="list-group-item">Habilidades: ${abilities}</li>
                         <li class="list-group-item">Estadisticas: ${stats}</li>
                         <li class="list-group-item">Experiencia base: ${base_experience}</li>
                     </ul>
-                    <div class="card-body">
-                        <a href="" class="btn btn-primary m-3" target="blank">Mas
+                    <div class="card-body text-center">
+                        <a href="https://www.pokemon.com/us/pokedex/${name}" class="btn btn-primary m-3" target="blank">Mas
                             info</a>
                     </div>
                 </div>
