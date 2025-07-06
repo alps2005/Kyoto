@@ -20,21 +20,22 @@
                 <input class="form-control me-2" type="search" id="search-input" placeholder="Ingrese el ID o nombre del pokemon"/>
                 <button class="btn-outline-yellow" type="button" id="search-button">Buscar</button>
             </form>
-            <div id="alert-empty" class="alert alert-danger mt-2" role="alert" style="display: none;">No se permiten campos vacios!</div>
-            <div id="alert-not-found" class="alert alert-danger mt-2" role="alert" style="display: none;">El pokemon que busca no existe!</div>
+            
           </div>
         </div>
     </nav>
-    <div class="container col-md-6">
+    <div class="container col-md-6 mb-2">
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Pokemon</h5>
-                <p class="card-text">Escribe el nombre del pokemon o el ID para buscarlo.</p>
+                <p class="card-text m-0">Escribe el nombre del pokemon o el ID para buscarlo.</p>
+                <div id="alert-empty" class="alert alert-danger mt-4" role="alert" style="display: none;">No se permiten campos vacios!</div>
+                <div id="alert-not-found" class="alert alert-danger mt-4" role="alert" style="display: none;">El pokemon que busca no existe!</div>
             </div>
         </div>
     </div>
-    <div class="container justify-content-center">
-        <div class="row" id="pokemon-container">
+    <div class="d-flex justify-content-evenly">
+        <div class="row m-5 rounded-3" id="pokemon-container">
             
         </div>
     </div>

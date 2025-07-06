@@ -30,8 +30,8 @@ document.getElementById('search-button').addEventListener('click', function() {
         var base_experience = data.base_experience;
         var pokeball = "";
         pokeball += `
-        <div class="col-md-3">
-            <div class="card m-3" style="width: 18rem;">
+        <div class="col m-3">
+            <div class="card" style="width: 18rem;">
                     <img src="${image}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-center bold-font">${name.toUpperCase()}</h5>
