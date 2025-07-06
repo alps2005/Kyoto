@@ -1,4 +1,3 @@
 # Programming 3 Project 2: Pokemon Finder
 
-This was a challenge because of the style of the website. Working with the API was quite easy, but the arrangement of the navbar and the cards was **painful**. In order to make a webpage responsive, it is **crucial** to understand the concepts of flex, containers, and how the objects contained react to the changes in the screen real estate. I'll try better next time.
-
+This was a challenge because of the style I wanted the website to have. Working with the API was quite easy, it helped me to understand the use of the json to get the data fetch from the API. Inthe other hand working eith bootstrap and css is fun but hard to understand, the arrangement of the navbar and the cards was **painful** because the card's internal margins are not responsive and made the them overlap with each other. In order to make a webpage responsive, it is **crucial** to understand the concepts of flex, containers, and how the objects contained react to the changes in the screen real estate. I'll try better next time.
