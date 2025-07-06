@@ -14,12 +14,14 @@ a {
     text-decoration: none;
     
 }
+
 .title {
     font-family: 'Pokemon Solid', sans-serif;
     font-size: 50px;
     font-weight: bold;
     color: #ffe100;
 }
+
 .nav-bar {
     padding: 30px;
     background-color: #009dff;
@@ -28,11 +30,12 @@ a {
     border-bottom-right-radius: 10px;
     margin-bottom: 30px;
 }
+
 .btn-outline-yellow {
     background-color: transparent;
-    color: #ffe100;
+    color: #ffee00;
     border: solid 2px;
-    border-color: #ffe100;
+    border-color: #ffee00;
     border-radius: 6px;
     padding: 10px;
     font-size: 16px;
@@ -40,12 +43,32 @@ a {
     transition: 0.3s;
 }
 .btn-outline-yellow:hover {
-    background-color: #ffe100;
+    background-color: #ffee00;
     color: white
 }
-
 .btn-outline-yellow:active {
     transition: 0.1s;
     background-color: #d5bd00;
-    color: #ffe100;
+    color: #ffee00;
+}
+
+.btn-outline-red {
+    background-color: transparent;
+    color: #ff0000;
+    border: solid 2px;
+    border-color: #ff0000;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn-outline-red:hover {
+    background-color: #ff0000;
+    color: white;
+}
+.btn-outline-red:active {
+    transition: 0.1s;
+    background-color: #d50000;
+    color: #ff0000;
 }
