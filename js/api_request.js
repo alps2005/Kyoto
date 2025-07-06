@@ -6,15 +6,17 @@ document.getElementById('search-button').addEventListener('click', function() {
         return;
     }
 
-    document.getElementById('search-input').value = '';
+    document.getElementById('alert-empty').style.display = 'none';
+
 
     fetch(`https://pokeapi.co/api/v2/pokemon/${input}`).then(data => {
-        console.log(data);
         if (data.status == 404){
             document.getElementById('alert-not-found').style.display = 'block';
             document.getElementById('alert-empty').style.display = 'none';
             return;
         }
+        document.getElementById('alert-not-found').style.display = 'none';
+        console.log(data);
         return data.json();
     }).then(data => {
         var name = data.name;
@@ -35,13 +37,13 @@ document.getElementById('search-button').addEventListener('click', function() {
                         <h5 class="card-title text-center bold-font">${name.toUpperCase()}</h5>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">ID: ${id}</li>
-                        <li class="list-group-item">Especie: ${species}</li>
-                        <li class="list-group-item">Altura: ${height}m</li>
-                        <li class="list-group-item">Peso: ${weight}kg</li>
-                        <li class="list-group-item">Habilidades: ${abilities}</li>
-                        <li class="list-group-item">Estadisticas: ${stats}</li>
-                        <li class="list-group-item">Experiencia base: ${base_experience}</li>
+                        <li class="list-group-item"><strong>ID:</strong> ${id}</li>
+                        <li class="list-group-item"><strong>Especie:</strong> ${species}</li>
+                        <li class="list-group-item"><strong>Altura:</strong> ${height}m</li>
+                        <li class="list-group-item"><strong>Peso:</strong> ${weight}kg</li>
+                        <li class="list-group-item"><strong>Habilidades:</strong> ${abilities}</li>
+                        <li class="list-group-item"><strong>Estadisticas:</strong> ${stats}</li>
+                        <li class="list-group-item"><strong>Experiencia base:</strong> ${base_experience}</li>
                     </ul>
                     <div class="card-body text-center">
                         <a href="https://www.pokemon.com/us/pokedex/${name}" class="btn btn-primary m-3" target="blank">Mas
