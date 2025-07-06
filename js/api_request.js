@@ -3,6 +3,7 @@ document.getElementById('search-button').addEventListener('click', function() {
     if (input === '') {
         document.getElementById('alert-empty').style.display = 'block';
         document.getElementById('alert-not-found').style.display = 'none';
+        console.log("Campo vacio!");
         return;
     }
 
@@ -13,6 +14,7 @@ document.getElementById('search-button').addEventListener('click', function() {
         if (data.status == 404){
             document.getElementById('alert-not-found').style.display = 'block';
             document.getElementById('alert-empty').style.display = 'none';
+            console.log("Pokemon no encontrado!");
             return;
         }
         document.getElementById('alert-not-found').style.display = 'none';
