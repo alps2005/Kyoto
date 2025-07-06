@@ -59,3 +59,10 @@ document.getElementById('search-button').addEventListener('click', function() {
     })
 
 })
+
+document.getElementById('clean-button').addEventListener('click', function() {
+    if ('clean-button') {
+        document.getElementById('pokemon-container').innerHTML = '';
+        document.getElementById('search-input').value = '';
+    }
+})
